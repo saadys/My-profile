@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saad-benhaimer.vercel.app/sitemap.xml

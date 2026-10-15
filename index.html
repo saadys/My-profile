@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saad Benhaimer — Data Scientist / AI Engineer</title>
+
+<meta name="description" content="Saad Benhaimer, élève ingénieur en Systèmes d'Information et Big Data à l'ENSA Berrechid (promo 2027). À la recherche d'un stage PFE de 6 mois en Data Science / IA dès février 2027. IA générative, RAG, agents LangGraph, MLOps.">
+<meta name="author" content="Saad Benhaimer">
+<meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F3EFE6" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://saad-benhaimer.vercel.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Saad Benhaimer — Data Scientist / AI Engineer">
+<meta property="og:description" content="Élève ingénieur ISI-BD (ENSA Berrechid, promo 2027). Stage PFE de 6 mois en Data Science / IA dès février 2027.">
+<meta property="og:url" content="https://saad-benhaimer.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/favicon.svg">
+
+<!-- Thème appliqué AVANT le premier paint : aucun flash, aucun saut -->
+<script>
+(function () {
+  try {
+    var s = localStorage.getItem('sb-theme');
+    var t = (s === 'light' || s === 'dark')
+      ? s
+      : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', t);
+    var l = localStorage.getItem('sb-lang');
+    if (l === 'en') document.documentElement.setAttribute('data-lang', 'en');
+  } catch (e) {}
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Caveat:wght@500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Caveat:wght@500&amp;display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Saad Benhaimer",
+  "jobTitle": "Data Scientist / AI Engineer",
+  "email": "mailto:saadys018@gmail.com",
+  "telephone": "+212708197067",
+  "address": { "@type": "PostalAddress", "addressCountry": "MA" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "ENSA Berrechid" },
+  "knowsAbout": ["Data Science", "Machine Learning", "IA générative", "RAG", "LangGraph", "MLOps", "LLMs"],
+  "seeks": "Stage PFE 6 mois en Data Science / IA — février 2027"
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#accueil" data-en="Skip to content">Aller au contenu</a>
+
+<!-- ══════════════════ NAVBAR ══════════════════ -->
+<header class="site-header" id="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="#accueil">Saad Benhaimer</a>
+
+    <nav class="nav" id="primary-nav" aria-label="Navigation principale">
+      <a href="#accueil"      class="nav-link is-active" data-en="Home">Accueil</a>
+      <a href="#experience"   class="nav-link" data-en="Experience">Expérience</a>
+      <a href="#projets"      class="nav-link" data-en="Projects">Projets</a>
+      <a href="#competences"  class="nav-link" data-en="Skills">Compétences</a>
+      <a href="#contact"      class="nav-link" data-en="Contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button type="button" class="icon-btn" id="lang-btn" aria-label="Switch to English" title="Switch to English">
+        <span id="lang-label">EN</span>
+      </button>
+
+      <button type="button" class="icon-btn" id="theme-btn" aria-label="Changer de thème" title="Changer de thème" aria-pressed="false">
+        <svg class="ico ico-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        <svg class="ico ico-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.2v2.1M12 19.7v2.1M4.4 4.4l1.5 1.5M18.1 18.1l1.5 1.5M2.2 12h2.1M19.7 12h2.1M4.4 19.6l1.5-1.5M18.1 5.9l1.5-1.5"/></svg>
+      </button>
+
+      <a class="btn btn-primary btn-cv" href="assets/cv/Saad_Benhaimer_CV.pdf" download data-en="Download my CV">Télécharger mon CV</a>
+
+      <button type="button" class="icon-btn burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3.5 7h17M3.5 12h17M3.5 17h17"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Navigation mobile" hidden>
+    <a href="#accueil"     data-en="Home">Accueil</a>
+    <a href="#a-propos"    data-en="About">À propos</a>
+    <a href="#experience"  data-en="Experience">Expérience</a>
+    <a href="#projets"     data-en="Projects">Projets</a>
+    <a href="#competences" data-en="Skills">Compétences</a>
+    <a href="#formation"   data-en="Education">Formation</a>
+    <a href="#contact"     data-en="Contact">Contact</a>
+    <a href="assets/cv/Saad_Benhaimer_CV.pdf" download class="mobile-cv" data-en="Download my CV">Télécharger mon CV ↓</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section id="accueil" class="hero">
+  <div class="shell hero-inner">
+    <div class="hero-text">
+      <p class="hero-avail">
+        <span data-en="Available for an end-of-studies internship – from">Disponible pour un stage PFE – dès</span>
+        <span class="squiggle">
+          <span data-en="February 2027">février 2027</span>
+          <svg viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 28 2, 58 12, 92 6 S 160 3, 198 8" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg>
+        </span>
+      </p>
+
+      <p class="hand hero-hello" data-en="Hello, I am">Bonjour, je suis</p>
+      <h1 class="hero-name">Saad <em>Benhaimer</em></h1>
+      <p class="hero-role">Data Scientist / AI Engineer</p>
+      <p class="hero-pitch" data-en="I design and ship generative-AI and MLOps systems into production: multimodal RAG, LangGraph agents, open-weight LLMs.">Je conçois et déploie des systèmes d'IA générative et de MLOps en production : RAG multimodal, agents LangGraph, LLMs open-weights.</p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projets" data-en="See my projects">Voir mes projets</a>
+        <a class="link-accent" href="#contact" data-en="Get in touch →">Me contacter →</a>
+      </div>
+    </div>
+
+    <figure class="hero-figure">
+      <div class="photo">
+        <img src="assets/img/saad.jpg" alt="Portrait de Saad Benhaimer" width="760" height="950" loading="eager" decoding="async" id="hero-photo">
+        <div class="photo-ph" id="photo-ph" aria-hidden="true">
+          <span class="photo-initials">SB</span>
+          <span class="hand photo-hint">ta photo ici → assets/img/saad.jpg</span>
+        </div>
+      </div>
+      <figcaption class="hand photo-caption">
+        <svg width="38" height="48" viewBox="0 0 40 50" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M33 47C10 42 3 22 14 7"/><path d="M5 15l9-9 8 10"/></svg>
+        <span data-en="Saad, class of 2027">Saad, promo 2027</span>
+      </figcaption>
+    </figure>
+
+    <p class="hero-meta">
+      <span data-en="ENSA Berrechid · ISI-BD · graduating 2027">ENSA Berrechid · ISI-BD · diplôme 2027</span>
+      <span><span data-en="Morocco">Maroc</span> · <time id="clock">—:—</time></span>
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════ À PROPOS ══════════════════ -->
+<section id="a-propos" class="band">
+  <div class="shell cols">
+    <div class="col-4">
+      <h2 class="h-serif" data-en="A bit of context">Un peu de contexte</h2>
+    </div>
+    <div class="col-8">
+      <p class="lede" data-en="I am in the final year of the engineering programme in Information Systems &amp; Big Data at ENSA Berrechid. What interests me is the journey between a model running in a notebook and a system other people actually use: generative AI, RAG, agents, inference, MLOps.">Je suis en dernière année du cycle ingénieur en Systèmes d'Information et Big Data à l'ENSA Berrechid. Ce qui m'intéresse, c'est le trajet entre un modèle qui tourne dans un notebook et un système que d'autres personnes utilisent vraiment : IA générative, RAG, agents, inférence, MLOps.</p>
+      <p class="muted about-p" data-en="During my two internships I built a multi-agent platform for six business departments, then server-load forecasting models on large volumes of logs. I am now looking for a 6-month end-of-studies internship in Data Science / AI, starting February 2027.">Pendant mes deux stages, j'ai construit une plateforme multi-agents pour six directions métiers, puis des modèles de prévision de charge serveurs sur de gros volumes de logs. Je cherche maintenant un stage PFE de 6 mois en Data Science / IA, à partir de février 2027.</p>
+
+      <div class="stats">
+        <div class="stat"><p class="stat-n">2</p><p class="stat-l" data-en="AI / MLOps internships">stages IA / MLOps</p></div>
+        <div class="stat"><p class="stat-n">50 Go</p><p class="stat-l" data-en="of logs processed per day">de logs traités par jour</p></div>
+        <div class="stat"><p class="stat-n">&minus;18 %</p><p class="stat-l" data-en="error vs ARIMA (LSTM)">d'erreur vs ARIMA (LSTM)</p></div>
+        <div class="stat"><p class="stat-n">&lt; 500 ms</p><p class="stat-l" data-en="TTFT in private inference">de TTFT en inférence privée</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ EXPÉRIENCE ══════════════════ -->
+<section id="experience" class="band">
+  <div class="shell cols">
+    <div class="col-4">
+      <h2 class="h-serif" data-en="Experience">Expérience</h2>
+      <p class="hand section-note" data-en="Two internships, two ways of taking AI all the way to production.">Deux stages, deux façons d'amener l'IA jusqu'à la production.</p>
+    </div>
+
+    <div class="col-8">
+      <article class="xp">
+        <p class="xp-date" data-en="July – September 2026">Juillet – Septembre 2026</p>
+        <div class="xp-body">
+          <h3 class="xp-org">SEGULA Technologies</h3>
+          <p class="xp-role" data-en="Data &amp; AI Intern (PFA)">Stagiaire Data &amp; AI (PFA)</p>
+          <p class="xp-lede" data-en="An internal AI platform, “AI Requirements Hub”, for 6 business departments: HR, Finance, Legal, IT, Support and Costing.">Une plateforme IA interne, « AI Requirements Hub », pour 6 directions métiers : RH, Finance, Juridique, IT, Support et Costing.</p>
+          <ul class="dash-list">
+            <li data-en="LangGraph multi-agent workflow with multimodal RAG (FastAPI, SQLAlchemy/Alembic, pgvector) and 5-pillar scoring, validated Human-in-the-Loop.">Workflow multi-agents LangGraph avec RAG multimodal (FastAPI, SQLAlchemy/Alembic, pgvector) et scoring sur 5 piliers, validé en Human-in-the-Loop.</li>
+            <li data-en="Drastic reduction of the feasibility-assessment lead time for business requirements.">Réduction drastique du délai d'évaluation de faisabilité des besoins métiers.</li>
+            <li data-en="Private inference of DeepSeek-R1 via vLLM, with a 1,000-request queue (TTFT &lt; 500 ms).">Inférence privée de DeepSeek-R1 via vLLM, avec une file de 1 000 requêtes (TTFT &lt; 500 ms).</li>
+            <li data-en="GitHub Actions CI/CD and multi-stage Docker containers deployed on Google Cloud Run.">CI/CD GitHub Actions et conteneurs Docker multi-stage déployés sur Google Cloud Run.</li>
+          </ul>
+          <p class="mono-stack">LangGraph / RAG / vLLM / DeepSeek-R1 / FastAPI / pgvector / Docker / Cloud Run</p>
+        </div>
+      </article>
+
+      <article class="xp xp-sep">
+        <p class="xp-date" data-en="June – August 2025">Juin – Août 2025</p>
+        <div class="xp-body">
+          <h3 class="xp-org">Silent Believers Distribution</h3>
+          <p class="xp-role" data-en="Data Scientist Intern">Stagiaire Data Scientist</p>
+          <p class="xp-lede" data-en="Server load forecast ahead of time and tracked live on Grafana.">La charge des serveurs prévue à l'avance et suivie en temps réel sur Grafana.</p>
+          <ul class="dash-list">
+            <li data-en="Pipelines processing 50 GB of logs per day.">Pipelines de traitement de 50 Go de logs par jour.</li>
+            <li data-en="PyTorch LSTM model: −18 % error compared with ARIMA.">Modèle LSTM PyTorch : −18 % d'erreur par rapport à ARIMA.</li>
+            <li data-en="Containerised MLOps architecture (Docker), exposed through a FastAPI API.">Architecture MLOps conteneurisée (Docker), exposée via une API FastAPI.</li>
+          </ul>
+          <p class="mono-stack">PyTorch / LSTM / Grafana / Docker / FastAPI / MLOps</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ PROJETS ══════════════════ -->
+<section id="projets" class="band">
+  <div class="shell">
+    <div class="section-head">
+      <h2 class="h-serif" data-en="Projects">Projets</h2>
+      <p class="hand section-note" data-en="One flagship project, and room for the next ones.">Un projet phare, et de la place pour les suivants.</p>
+    </div>
+
+    <div class="projects">
+      <article class="card card-main">
+        <p class="badge" data-en="Flagship project">Projet phare</p>
+        <h3 class="card-title">AlgoTrading AI</h3>
+        <p class="card-sub" data-en="Hybrid algorithmic trading: Deep Learning + microservices">Trading algorithmique hybride : Deep Learning + microservices</p>
+        <p class="muted" data-en="Binance markets stream in live over WebSockets and RabbitMQ, with TA-Lib indicators and sentiment analysis. An LSTM, tracked with MLflow, produces the predictions; an LLM decision engine (OpenAI, Gemini) arbitrates them. Everything runs as FastAPI microservices under Docker Compose, supervised by Prometheus and Grafana.">Les marchés Binance arrivent en temps réel par WebSockets et RabbitMQ, avec indicateurs TA-Lib et analyse de sentiment. Un LSTM, suivi avec MLflow, produit les prédictions ; un moteur de décision LLM (OpenAI, Gemini) les arbitre. Le tout tourne en microservices FastAPI sous Docker Compose, supervisés par Prometheus et Grafana.</p>
+
+        <p class="pipeline">Binance WS<i>→</i>RabbitMQ<i>→</i><span data-en="TA-Lib + sentiment">TA-Lib + sentiment</span><i>→</i>LSTM · MLflow<i>→</i><span data-en="LLM decision">décision LLM</span><i>→</i>Grafana</p>
+
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">LSTM</span><span class="tag">MLflow</span><span class="tag">LLM</span><span class="tag">WebSockets</span><span class="tag">RabbitMQ</span><span class="tag">TA-Lib</span><span class="tag">FastAPI</span><span class="tag">Docker Compose</span><span class="tag">Prometheus</span><span class="tag">Grafana</span>
+        </div>
+
+        <div class="card-links">
+          <a class="link-accent" href="https://github.com/saadys" target="_blank" rel="noopener noreferrer">Code ↗</a>
+          <a class="link-accent" href="https://github.com/saadys" target="_blank" rel="noopener noreferrer" data-en="Demo ↗">Démo ↗</a>
+        </div>
+      </article>
+
+      <div class="projects-side">
+        <article class="card card-ghost">
+          <p class="hand ghost-note" data-en="coming up…">à suivre…</p>
+          <h3 class="ghost-title" data-en="Upcoming project">Projet à venir</h3>
+          <p class="muted" data-en="Replace this card in index.html: title, description, tags, links.">Remplacez cette carte dans index.html : titre, description, tags, liens.</p>
+          <div class="tags"><span class="tag">[Tag]</span><span class="tag">[Tag]</span></div>
+          <a class="link-accent ghost-link" href="https://github.com/saadys" target="_blank" rel="noopener noreferrer">Code ↗</a>
+        </article>
+
+        <article class="card card-ghost">
+          <p class="hand ghost-note" data-en="also soon…">bientôt aussi…</p>
+          <h3 class="ghost-title" data-en="Upcoming project">Projet à venir</h3>
+          <p class="muted" data-en="Replace this card in index.html: title, description, tags, links.">Remplacez cette carte dans index.html : titre, description, tags, liens.</p>
+          <div class="tags"><span class="tag">[Tag]</span><span class="tag">[Tag]</span></div>
+          <a class="link-accent ghost-link" href="https://github.com/saadys" target="_blank" rel="noopener noreferrer">Code ↗</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ COMPÉTENCES ══════════════════ -->
+<section id="competences" class="band">
+  <div class="shell cols">
+    <div class="col-4">
+      <h2 class="h-serif" data-en="Skills">Compétences</h2>
+    </div>
+    <div class="col-8">
+      <div class="skill-row">
+        <h3 class="skill-group" data-en="Programming">Programmation</h3>
+        <div class="tags tags-lg"><span class="tag">Python</span><span class="tag">Java</span><span class="tag">SQL</span><span class="tag">C</span></div>
+      </div>
+      <div class="skill-row">
+        <h3 class="skill-group" data-en="AI">IA</h3>
+        <div class="tags tags-lg"><span class="tag">AI Agents</span><span class="tag">LangGraph</span><span class="tag" data-en="Generative AI">IA générative</span><span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">vLLM</span><span class="tag">Fine-tuning</span><span class="tag">MLflow</span></div>
+      </div>
+      <div class="skill-row">
+        <h3 class="skill-group">Data Science / ML</h3>
+        <div class="tags tags-lg"><span class="tag">Scikit-learn</span><span class="tag">XGBoost</span><span class="tag">TensorFlow</span><span class="tag">PyTorch</span><span class="tag">HuggingFace</span></div>
+      </div>
+      <div class="skill-row">
+        <h3 class="skill-group">Data Engineering &amp; Cloud</h3>
+        <div class="tags tags-lg"><span class="tag">Spark</span><span class="tag">Airflow</span><span class="tag">Kafka</span><span class="tag">Docker</span><span class="tag">RabbitMQ</span><span class="tag">AWS</span><span class="tag">GCP</span><span class="tag">ETL / ELT</span><span class="tag">Data Lake</span></div>
+      </div>
+      <div class="skill-row">
+        <h3 class="skill-group" data-en="Databases">Bases de données</h3>
+        <div class="tags tags-lg"><span class="tag">PostgreSQL</span><span class="tag">pgvector</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">HBase</span></div>
+      </div>
+      <div class="skill-row">
+        <h3 class="skill-group">DevOps</h3>
+        <div class="tags tags-lg"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Linux</span><span class="tag">FastAPI</span><span class="tag">CI/CD</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FORMATION ══════════════════ -->
+<section id="formation" class="band">
+  <div class="shell cols">
+    <div class="col-4">
+      <h2 class="h-serif" data-en="Education">Formation</h2>
+    </div>
+    <div class="col-8">
+      <div class="skill-row skill-row-first">
+        <h3 class="skill-group" data-en="Programme">Cursus</h3>
+        <div class="edu">
+          <p class="mono-date">2024 – 2027</p>
+          <p class="edu-title">ENSA Berrechid</p>
+          <p class="muted" data-en="Engineering programme — Information Systems &amp; Big Data (ISI-BD)">Cycle Ingénieur — Systèmes d'Information et Big Data (ISI-BD)</p>
+          <p class="mono-date edu-gap">2022 – 2024</p>
+          <p class="edu-title">ENSA Berrechid</p>
+          <p class="muted" data-en="Integrated preparatory cycle">Cycle Préparatoire Intégré</p>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <h3 class="skill-group" data-en="Certification">Certification</h3>
+        <div class="edu">
+          <p class="mono-date">2025</p>
+          <p class="edu-title">AWS Certified Cloud Practitioner</p>
+          <p class="muted">Amazon Web Services</p>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <h3 class="skill-group" data-en="Languages">Langues</h3>
+        <div class="langs">
+          <p><span class="lang-n" data-en="Arabic">Arabe</span><span class="muted lang-l" data-en="native">langue maternelle</span></p>
+          <p><span class="lang-n" data-en="French">Français</span><span class="muted lang-l" data-en="fluent">courant</span></p>
+          <p><span class="lang-n" data-en="English">Anglais</span><span class="muted lang-l" data-en="fluent">courant</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CONTACT ══════════════════ -->
+<section id="contact" class="band">
+  <div class="shell contact-grid">
+    <div class="contact-left">
+      <h2 class="contact-h" data-en="Write to me.">Écrivez-moi.</h2>
+      <p class="contact-lede" data-en="I am looking for a 6-month end-of-studies internship in Data Science / AI starting February 2027, in Morocco or abroad. A question, an opportunity, a project: one email is enough.">Je cherche un stage PFE de 6 mois en Data Science / IA à partir de février 2027, au Maroc ou à l'international. Une question, une opportunité, un projet : un mail suffit.</p>
+
+      <a class="contact-mail" href="mailto:saadys018@gmail.com">saadys018@gmail.com</a>
+
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:saadys018@gmail.com?subject=Stage%20PFE%20Data%20Science%20%2F%20IA" data-en="Send an email">Envoyer un email</a>
+        <button type="button" class="btn btn-ghost" id="copy-btn" data-copy="saadys018@gmail.com" data-en="Copy email">Copier l'email</button>
+      </div>
+
+      <div class="contact-rows">
+        <div class="crow"><span class="crow-k" data-en="Phone">Téléphone</span><a class="link-accent" href="tel:+212708197067">+212 708197067</a></div>
+        <div class="crow"><span class="crow-k" data-en="Location">Localisation</span><span data-en="Morocco">Maroc</span></div>
+        <div class="crow"><span class="crow-k" data-en="Elsewhere">Ailleurs</span>
+          <span class="crow-links">
+            <a class="link-accent" href="https://www.linkedin.com/in/saad-benhaimer-03a962287/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a class="link-accent" href="https://github.com/saadys?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a class="link-accent" href="https://huggingface.co/saadys018" target="_blank" rel="noopener noreferrer">Hugging Face ↗</a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contact-form" novalidate>
+      <label class="field">
+        <span class="field-k" data-en="Your name">Votre nom</span>
+        <input type="text" name="name" id="f-name" autocomplete="name" required>
+      </label>
+      <label class="field">
+        <span class="field-k" data-en="Your email">Votre email</span>
+        <input type="email" name="email" id="f-email" autocomplete="email" required>
+      </label>
+      <label class="field">
+        <span class="field-k" data-en="Your message">Votre message</span>
+        <textarea name="message" id="f-message" rows="5" required></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary form-submit" data-en="Send the message">Envoyer le message</button>
+      <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <p>© 2026 Saad Benhaimer</p>
+    <p data-en="Hand-written in HTML, CSS and JavaScript.">Écrit à la main en HTML, CSS et JavaScript.</p>
+    <a class="link-accent" href="#accueil" data-en="Back to top ↑">Retour en haut ↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

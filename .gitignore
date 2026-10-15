@@ -1,0 +1,15 @@
+# Dépendances (le site n'en a pas, mais npx/serve peut en créer)
+node_modules/
+
+# Vercel
+.vercel/
+
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
