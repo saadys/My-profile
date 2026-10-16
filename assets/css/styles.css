@@ -604,22 +604,22 @@ section { scroll-margin-top: calc(var(--header-h) + 8px); }
   gap: 20px;
 }
 
-.card-ghost {
+.card-side {
   flex: 1;
   padding: 28px;
-  gap: 16px;
-  border: 1px dashed var(--text3);
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
   transition: border-color var(--t);
 }
-.card-ghost:hover { border-color: var(--accent); }
-.ghost-note { font-size: 24px; transform: rotate(-2deg); transform-origin: left; }
-.ghost-title {
+.card-side:hover { border-color: var(--accent); }
+.side-title {
   font-family: var(--serif);
   font-size: 30px;
   line-height: 1.05;
-  color: var(--text2);
 }
-.ghost-link { margin-top: auto; font-size: 15px; }
+.side-sub { font-size: 15px; font-weight: 500; color: var(--text2); }
+.card-side .muted { font-size: 15px; }
 
 /* ---------- 10. COMPÉTENCES / FORMATION ---------- */
 
@@ -840,7 +840,7 @@ section { scroll-margin-top: calc(var(--header-h) + 8px); }
     transition-duration: .01ms !important;
   }
   .hero-hello, .section-note, .badge, .photo,
-  .photo-caption, .ghost-note { transform: none; }
+  .photo-caption { transform: none; }
 }
 
 @media print {

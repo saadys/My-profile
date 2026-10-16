@@ -131,10 +131,10 @@
 
     <figure class="hero-figure">
       <div class="photo">
-        <img src="assets/img/saad.jpg" alt="Portrait de Saad Benhaimer" width="760" height="950" loading="eager" decoding="async" id="hero-photo">
+        <img src="assets/img/saad.webp" alt="Portrait de Saad Benhaimer" width="1122" height="1402" loading="eager" decoding="async" id="hero-photo">
         <div class="photo-ph" id="photo-ph" aria-hidden="true">
           <span class="photo-initials">SB</span>
-          <span class="hand photo-hint">ta photo ici → assets/img/saad.jpg</span>
+          <span class="hand photo-hint">ta photo ici → assets/img/saad.webp</span>
         </div>
       </div>
       <figcaption class="hand photo-caption">
@@ -163,7 +163,7 @@
       <div class="stats">
         <div class="stat"><p class="stat-n">2027</p><p class="stat-l" data-en="engineering degree, ISI-BD">diplôme d'ingénieur ISI-BD</p></div>
         <div class="stat"><p class="stat-n">2</p><p class="stat-l" data-en="AI internships taken through to production">stages IA menés jusqu'en production</p></div>
-        <div class="stat"><p class="stat-n">6 mois</p><p class="stat-l" data-en="end-of-studies internship, from February 2027">de stage PFE recherché, dès février 2027</p></div>
+        <div class="stat"><p class="stat-n">6</p><p class="stat-l" data-en="months of end-of-studies internship, from February 2027">mois de stage PFE recherché, dès février 2027</p></div>
         <div class="stat"><p class="stat-n">4</p><p class="stat-l" data-en="fields: RAG, agents, MLOps, inference">terrains : RAG, agents, MLOps, inférence</p></div>
       </div>
     </div>
@@ -218,7 +218,7 @@
   <div class="shell">
     <div class="section-head">
       <h2 class="h-serif" data-en="Projects">Projets</h2>
-      <p class="hand section-note" data-en="One flagship project, and room for the next ones.">Un projet phare, et de la place pour les suivants.</p>
+      <p class="hand section-note" data-en="One flagship project, and two more that take AI and data all the way.">Un projet phare, et deux autres qui mènent l'IA et la data jusqu'au bout.</p>
     </div>
 
     <div class="projects">
@@ -241,20 +241,24 @@
       </article>
 
       <div class="projects-side">
-        <article class="card card-ghost">
-          <p class="hand ghost-note" data-en="coming up…">à suivre…</p>
-          <h3 class="ghost-title" data-en="Upcoming project">Projet à venir</h3>
-          <p class="muted" data-en="Replace this card in index.html: title, description, tags, links.">Remplacez cette carte dans index.html : titre, description, tags, liens.</p>
-          <div class="tags"><span class="tag">[Tag]</span><span class="tag">[Tag]</span></div>
-          <a class="link-accent ghost-link" href="https://github.com/saadys" target="_blank" rel="noopener noreferrer">Code ↗</a>
+        <article class="card card-side">
+          <h3 class="side-title">Mini RAG App</h3>
+          <p class="side-sub" data-en="A RAG backend built to go into production">Un backend RAG construit pour aller en production</p>
+          <p class="muted" data-en="A modular FastAPI backend: documents are stored and chunked, semantic search finds the right passages, and an LLM answers from that retrieved context. MongoDB holds the projects and their assets, so the same service takes on several corpora.">Un backend FastAPI modulaire : les documents sont stockés et découpés, la recherche sémantique retrouve les bons passages, et un LLM répond à partir de ce contexte. MongoDB garde les projets et leurs fichiers, pour que le même service encaisse plusieurs corpus.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">RAG</span><span class="tag">LLMs</span><span class="tag" data-en="Semantic search">Recherche sémantique</span><span class="tag">MongoDB</span><span class="tag">Docker</span></div>
+          <div class="card-links">
+            <a class="link-accent" href="https://github.com/saadys/mini-rag-app" target="_blank" rel="noopener noreferrer">Code ↗</a>
+          </div>
         </article>
 
-        <article class="card card-ghost">
-          <p class="hand ghost-note" data-en="also soon…">bientôt aussi…</p>
-          <h3 class="ghost-title" data-en="Upcoming project">Projet à venir</h3>
-          <p class="muted" data-en="Replace this card in index.html: title, description, tags, links.">Remplacez cette carte dans index.html : titre, description, tags, liens.</p>
-          <div class="tags"><span class="tag">[Tag]</span><span class="tag">[Tag]</span></div>
-          <a class="link-accent ghost-link" href="https://github.com/saadys" target="_blank" rel="noopener noreferrer">Code ↗</a>
+        <article class="card card-side">
+          <h3 class="side-title">GoalIQ</h3>
+          <p class="side-sub" data-en="Football data engineering, streaming and batch">Data engineering football, en streaming et en batch</p>
+          <p class="muted" data-en="Live match events leave the SportMonks API through Kafka, while Airflow orchestrates the batch loads of seasons, fixtures and standings. MongoDB keeps the documents, Redis caches the hot ones, FastAPI serves them — the whole stack under Docker Compose, in clean-architecture layers.">Les événements de match quittent l'API SportMonks par Kafka, pendant qu'Airflow orchestre les chargements batch des saisons, matchs et classements. MongoDB garde les documents, Redis met en cache les plus chauds, FastAPI les expose — toute la stack sous Docker Compose, en couches clean architecture.</p>
+          <div class="tags"><span class="tag">Kafka</span><span class="tag">Airflow</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">FastAPI</span><span class="tag">Pydantic</span><span class="tag">Docker Compose</span></div>
+          <div class="card-links">
+            <a class="link-accent" href="https://github.com/saadys/GoalIQ-" target="_blank" rel="noopener noreferrer">Code ↗</a>
+          </div>
         </article>
       </div>
     </div>
