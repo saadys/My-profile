@@ -3,6 +3,9 @@
 Site portfolio one-page statique. **Zéro dépendance, zéro build, zéro serveur.**
 Implémentation fidèle du design *« V2 — humanisée (éditoriale) »*.
 
+**En ligne : https://saad-benhaimer.vercel.app**
+Projet Vercel `my-profile` · dépôt https://github.com/saadys/My-profile
+
 ## Structure
 
 ```
@@ -27,11 +30,16 @@ Aucune configuration : c'est un site statique.
 npx vercel --prod
 ```
 
-Ou via l'interface : *Add New → Project*, importer le dépôt Git,
-**Framework Preset = Other**, laisser *Build Command* et *Output Directory* vides.
+Le projet est déjà créé et déployé ; cette commande suffit pour publier une
+mise à jour.
 
-Pensez ensuite à remplacer `https://saad-benhaimer.vercel.app/` par l'URL
-réelle dans `index.html` (`canonical`, `og:url`), `robots.txt` et `sitemap.xml`.
+Pour que chaque `git push` redéploie tout seul, il faut autoriser l'app GitHub
+de Vercel sur le compte `saadys` : sur vercel.com, projet *my-profile* →
+*Settings* → *Git* → *Connect Git Repository*, puis installer l'intégration
+GitHub quand elle est proposée.
+
+La protection « Vercel Authentication » a été désactivée sur ce projet : sans
+cela, le site redirigeait les visiteurs vers une page de connexion Vercel.
 
 ## Aperçu en local
 
@@ -49,7 +57,6 @@ aussi, mais un serveur reflète mieux le comportement final).
 | **Photo de profil** | déposer `assets/img/saad.jpg` (format portrait 4:5, ~760×950 px). Sans ce fichier, le placeholder « SB » du design s'affiche automatiquement. |
 | **CV** | remplacer `assets/cv/Saad_Benhaimer_CV.pdf` |
 | **Liens des projets** | cartes `.card-main` / `.card-ghost` dans `index.html` — ils pointent pour l'instant vers le profil GitHub, à remplacer par l'URL du dépôt (et par une vraie démo, sinon supprimer le lien « Démo ») |
-| **URL du site** | `https://saad-benhaimer.vercel.app/` est une supposition : à confirmer après le premier déploiement dans `index.html` (`canonical`, `og:url`), `robots.txt` et `sitemap.xml` |
 | **Les 2 cartes « Projet à venir »** | `index.html`, blocs `.card-ghost` |
 | **Textes anglais** | attribut `data-en="…"` sur chaque élément traduit |
 
